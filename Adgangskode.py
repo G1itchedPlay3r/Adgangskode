@@ -27,6 +27,7 @@ print(listToString(s))
 #print to txt
 file = open ("koder.txt", "a+")
 
+file.write("Hjemmeside; \n" "Email; \n" "Kode; ")
 file.write(listToString(s))
 
 file.close()
