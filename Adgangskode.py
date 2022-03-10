@@ -1,6 +1,6 @@
+from cgi import test
 import random
 from turtle import up
-
 
 #Adgangskode
 lower = "abcdefghijklmnopqrstuvwxyz"
@@ -15,13 +15,18 @@ password = "".join(random.sample(all, length))
 #list to string
 def listToString(s): 
     
-    str1 = ""
+    
+    str1 = "\n" 
+    
     
     return (str1.join(s))
            
-s = ["new kode: ", password]
+s = [password]
+print(listToString(s)) 
 
 #print to txt
-with open ("koder.txt", "w") as testtxt:
-    testtxt.write(listToString(s))
+file = open ("koder.txt", "a+")
 
+file.write(listToString(s))
+
+file.close()
