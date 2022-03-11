@@ -1,4 +1,0 @@
-- Koden bliver lavet tilsidst i filen, 
-- lav to nye mellemrum mellem koderne
-- Ps... Husk at kør visual studio filen for ny kode
-
